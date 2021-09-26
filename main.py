@@ -58,8 +58,6 @@ while len(opened) < a*b-mines:  # пок не открыли все клетки
             if not (x, y) in opened:
                 n = nmines(field, x, y)
                 user[x][y] = str(n)
-                if n == 0:
-                    pass
                 output(user)
                 opened.add((x, y))  # обновили список открытых клеток
             else:

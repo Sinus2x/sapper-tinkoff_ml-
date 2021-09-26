@@ -1,5 +1,7 @@
 import pickle as pkl
 import numpy as np
+
+
 def coord(a, b):
     x, y = map(int, input().split())
     while not (x>=0 and y>=0 and y<a and x<b):
@@ -26,6 +28,7 @@ def choice(a, b):
         print("Такого действия не существует. Введите ещё раз.")
         action = input().lower()
     return [x, y, action]
+
 
 def save(field, user, opened, marked, a, b, mines):
     print("Как вы хотите назвать сохранение: ")
